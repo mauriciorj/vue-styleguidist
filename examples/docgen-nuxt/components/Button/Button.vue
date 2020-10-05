@@ -1,6 +1,6 @@
 <template>
 	<div class="Button">
-		<button class="button" @click.prevent="onClick" :style="{ color: color, fontSize: fontSize }">
+		<button class="button" :style="{ color: color, fontSize: fontSize }" @click.prevent="onClick">
 			<!-- @slot Content of button -->
 			<slot></slot>
 		</button>
@@ -10,55 +10,56 @@
 <script>
 /**
  * The only true button.
- *
+ * 
+ * @order 1
  * @example ./Second-ReadMe.md
  */
 export default {
-	name: 'Button',
-	props: {
-		/**
-		 * The color for the button.
-		 */
-		color: {
-			type: String,
-			default: '#333'
-		},
-		/**
-		 * The size of the button
-		 * @values small, normal, large
-		 */
-		size: {
-			type: String,
-			default: 'normal'
-		},
-		/**
-		 * Gets called when the user clicks on the button
-		 * @ignore
-		 */
-		onClick: {
-			type: Function,
-			default: event => {
-				console.log('You have clicked me!', event.target)
-			}
-		}
-	},
-	computed: {
-		fontSize() {
-			let size
-			switch (this.size) {
-				case 'small':
-					size = '10px'
-					break
-				case 'normal':
-					size = '14px'
-					break
-				case 'large':
-					size = '18px'
-					break
-			}
-			return size
-		}
-	}
+  name: 'Button',
+  props: {
+    /**
+     * The color for the button.
+     */
+    color: {
+      type: String,
+      default: '#333'
+    },
+    /**
+     * The size of the button
+     * @values small, normal, large
+     */
+    size: {
+      type: String,
+      default: 'normal'
+    },
+    /**
+     * Gets called when the user clicks on the button
+     * @ignore
+     */
+    onClick: {
+      type: Function,
+      default: event => {
+        console.log('You have clicked me!', event.target)
+      }
+    }
+  },
+  computed: {
+    fontSize() {
+      let size
+      switch (this.size) {
+        case 'small':
+          size = '10px'
+          break
+        case 'normal':
+          size = '14px'
+          break
+        case 'large':
+          size = '18px'
+          break
+      }
+      return size
+    }
+  }
 }
 </script>
 

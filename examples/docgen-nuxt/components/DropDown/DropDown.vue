@@ -8,8 +8,9 @@
 <script>
 /**
  * @requires ./MyOption.vue
+ * @order 3
  */
 export default {
-	name: 'DropDown'
+  name: 'DropDown'
 }
 </script>

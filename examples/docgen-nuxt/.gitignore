@@ -1,2 +1,2 @@
-docs/components
-dist/
+docs/*/*.md
+static/
