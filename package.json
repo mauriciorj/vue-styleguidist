@@ -63,13 +63,10 @@
 		"@vue/cli-service": "^4.5.4",
 		"@vue/eslint-config-prettier": "^5.0.0",
 		"@vue/eslint-config-typescript": "^4.0.0",
-		"@vuepress/plugin-google-analytics": "^1.0.3",
-		"@vuepress/plugin-register-components": "1.0.3",
 		"babel-eslint": "^9.0.0",
 		"babel-jest": "^25.2.6",
 		"babel-loader": "^8.0.5",
 		"concurrently": "^4.1.1",
-		"core-js": "^3.4.1",
 		"cross-env": "^5.2.0",
 		"danger": "^10.2.0",
 		"deabsdeep": "^2.0.1",
@@ -112,10 +109,9 @@
 		"ts-jest": "^26.2.0",
 		"tslib": "^2.0.0",
 		"typescript": "^3.7.3",
-		"vue": "^2.6.10",
-		"vue-template-compiler": "^2.6.10",
+		"vue": "^2.6.12",
+		"vue-template-compiler": "^2.6.12",
 		"vuepress": "^1.2.0",
-		"webpack-dev-server": "^3.11.0",
 		"yorkie": "^2.0.0"
 	},
 	"keywords": [
@@ -139,16 +135,12 @@
 			"git add"
 		],
 		"packages/vue-styleguidist/src/scripts/schemas/config.ts": [
-			"pnpm maketypes",
+			"pnpm run maketypes",
 			"git add ./packages/vue-styleguidist/src/types/StyleGuide.ts"
 		]
 	},
 	"gitHooks": {
 		"pre-commit": "lint-staged",
 		"commit-msg": "commitlint -E GIT_PARAMS"
-	},
-	"dependencies": {
-		"vue-cli-plugin-styleguidist": "^4.31.1",
-		"vue-styleguidist": "^4.31.1"
 	}
 }
