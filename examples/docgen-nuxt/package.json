@@ -22,27 +22,11 @@
 		"styleguide:build": "vue-docgen && nuxt generate"
 	},
 	"dependencies": {
-		"@nuxt/content": "^1.9.0",
 		"@nuxt/content-theme-docs": "0.3.1",
-		"clipboard": "^2.0.6",
 		"concurrently": "^5.3.0",
-		"cookie": "^0.4.1",
-		"core-js": "^3.6.5",
-		"deepcopy": "^2.1.0",
-		"js-cookie": "^2.2.1",
-		"marked": "^1.2.0",
-		"node-fetch": "^2.6.1",
 		"nuxt": "^2.14.6",
-		"property-information": "^5.5.0",
-		"vuex": "^3.5.1",
-		"vue-client-only": "^2.0.0",
 		"vue-docgen-api": "^4.31.1",
-		"vue-docgen-cli": "^4.31.1",
-		"vue-i18n": "^8.21.1",
-		"vue-meta": "^2.4.0",
-		"vue-no-ssr": "^1.1.1",
-		"vue-router": "^3.4.5",
-		"vue-scrollactive": "^0.9.3"
+		"vue-docgen-cli": "^4.31.1"
 	},
 	"engines": {
 		"node": ">=4"
