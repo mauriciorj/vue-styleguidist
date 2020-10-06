@@ -12,7 +12,7 @@ esac
 cd examples/$exampleName
 if [ $1 = "build" ]; 
 then
-    pnpm styleguide:build -- $extra
+    npm run styleguide:build -- $extra
 else
-    pnpm styleguide -- $extra
+    npm run styleguide -- $extra
 fi
