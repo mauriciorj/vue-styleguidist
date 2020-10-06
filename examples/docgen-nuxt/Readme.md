@@ -4,11 +4,9 @@ How to start locally:
 
 ```sh
 git clone https://github.com/vue-styleguidist/vue-styleguidist.git
-cd vue-styleguidist/examples/docgen
+cd vue-styleguidist/examples/docgen-nuxt
 yarn install
 yarn docs
 ```
 
-**NOTE** does not work with npm only with yarn because of hoisting issues
-
-Then open [http://localhost:8080](http://localhost:8080) in your browser.
+Then open [http://localhost:3080](http://localhost:3080) in your browser.

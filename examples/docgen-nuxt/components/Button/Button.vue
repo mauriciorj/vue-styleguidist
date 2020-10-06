@@ -66,13 +66,12 @@ export default {
 <style scope>
 .button {
 	padding: 0.5em 1.5em;
-	background-color: $primary;
-	border: 1px solid $secondary;
 	border-radius: 0.3em;
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
 }
+
 .checks {
 	background-image: linear-gradient(45deg, #f5f5f5 25%, transparent 25%),
 		linear-gradient(-45deg, #f5f5f5 25%, transparent 25%),
@@ -82,6 +81,7 @@ export default {
 	background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
 }
 </style>
+
 <docs>
 Use vue live right here too
 

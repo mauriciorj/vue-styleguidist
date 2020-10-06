@@ -12,22 +12,19 @@ module.exports = {
 		return path.join(config.outDir, componentPath).replace(/\/\w+\.vue$/, '.md')
 	},
 	templates: {
-		// global component template wrapping all others see #templates
 		component: function component(
-			renderedUsage, // props, events, methods and slots documentation rendered
-			doc, // the object returned by vue-docgen-api
+			renderedUsage,
+			doc,
 			config,
 			fileName,
 			requiresMd,
-			{ isSubComponent, hasSubComponents } // a sub-component or does the current component have subcomponents
+			{ isSubComponent }
 		) {
 			const { functional, displayName, description, docsBlocks, tags } = doc
 			const { author, since, version, see, link, order } = tags || {}
 			const frontMatter = []
 
 			if (!isSubComponent) {
-				// to avoid having the squiggles in the left menu for deprecated items
-				// use the frontmatter feature of vuepress
 				frontMatter.push(`title: "${displayName}"`)
 				frontMatter.push('category: "components"')
 				if (order) {
@@ -43,7 +40,7 @@ ${frontMatter.join('\n')}
 					: ''
 			}
 
-${isSubComponent || hasSubComponents ? `# ${displayName}` : ''}
+${isSubComponent ? `# ${displayName}` : ''}
 
 ${description}
 
