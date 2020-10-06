@@ -18,8 +18,8 @@
 	},
 	"license": "MIT",
 	"scripts": {
-		"docs": "concurrently \"vue-docgen --watch\" \"nuxt dev\"",
-		"docs:build": "vue-docgen && nuxt generate"
+		"styleguide": "concurrently \"vue-docgen --watch\" \"nuxt dev\"",
+		"styleguide:build": "vue-docgen && nuxt generate"
 	},
 	"dependencies": {
 		"@nuxt/content": "^1.9.0",
