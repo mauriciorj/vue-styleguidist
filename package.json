@@ -123,6 +123,7 @@
 		"vue-no-ssr": "^1.1.1",
 		"vue-router": "^3.4.5",
 		"vue-scrollactive": "^0.9.3",
+		"vue-styleguidist": "workspace:^4.32.4",
 		"vue-template-compiler": "^2.6.12",
 		"vuepress": "^1.2.0",
 		"vuex": "^3.5.1",
